@@ -25,3 +25,50 @@ Both models are trained and evaluated on a custom-labeled dataset containing **8
 
 All images and bounding box annotations are organized under the `Dataset/` folder:
 
+
+---
+
+## ⚙️ Models Trained
+
+### 1. 🔴 YOLOv8 (Ultralytics)
+- Model: `yolov8n.pt` (nano variant for speed)
+- Epochs: 50
+- Batch size: 16
+- Optimizer: SGD
+- Results saved in `runs/detect/`
+
+### 2. 🟢 Faster R-CNN (TorchVision)
+- Backbone: ResNet-50 with FPN
+- Modified classifier head for 5 classes (4 + background)
+- Epochs: 5
+- Optimizer: SGD with momentum
+- Trained weights saved as `fasterrcnn_road_signs.pth`
+
+---
+
+## 🧪 Evaluation Metrics (Test Set)
+
+| Model        | Precision | Recall | F1 Score | mAP@0.5 |
+|--------------|-----------|--------|----------|---------|
+| YOLOv8       | ✅ Visual inspection used (bounding boxes accurate) |
+| Faster R-CNN | 0.9722    | 0.7836 | 0.8678   | -       |
+
+---
+
+## 🖼️ Predictions (Faster R-CNN)
+
+Random predictions from the test set after inference:
+
+![sample1](assets/sample1.png)
+![sample2](assets/sample2.png)
+
+> (Visuals saved in `runs/detect/predict/` and displayed using Matplotlib)
+
+---
+
+## 🚀 Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/Road-Sign-Detection.git
+   cd Road-Sign-Detection
