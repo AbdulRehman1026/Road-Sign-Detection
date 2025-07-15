@@ -1,5 +1,7 @@
+*.pth
 Dataset/
 venv/
 prediction_samples.png
 test.ipynb
 runs/
+fasterrcnn_road_signs.pth
