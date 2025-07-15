@@ -50,7 +50,7 @@ All images and bounding box annotations are organized under the `Dataset/` folde
 
 | Model        | Precision | Recall | F1 Score | mAP@0.5 |
 |--------------|-----------|--------|----------|---------|
-| YOLOv8       | ✅ Visual inspection used (bounding boxes accurate) |
+| YOLOv8       | 0.9432      0.8589   0.8635     0.9029  |
 | Faster R-CNN | 0.9722    | 0.7836 | 0.8678   | -       |
 
 ---
@@ -59,8 +59,8 @@ All images and bounding box annotations are organized under the `Dataset/` folde
 
 Random predictions from the test set after inference:
 
-![sample1](assets/sample1.png)
-![sample2](assets/sample2.png)
+![sample1](assets/sample1.jpg)
+![sample2](assets/sample2.jpg)
 
 > (Visuals saved in `runs/detect/predict/` and displayed using Matplotlib)
 
