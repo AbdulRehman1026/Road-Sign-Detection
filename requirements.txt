@@ -1,0 +1,35 @@
+# Core ML Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Install CUDA-enabled versions based on your system (use pip install torch --index-url ...)
+# You can replace above with specific CUDA version if needed
+
+# YOLOv8 (Ultralytics)
+ultralytics>=8.0.0
+
+# Annotation Parsing (Pascal VOC)
+xmltodict
+lxml
+
+# Image + Data Utils
+opencv-python
+matplotlib
+pillow
+pandas
+scikit-learn
+tqdm
+
+# Visualization
+seaborn
+
+# Environment / Logging
+pyyaml
+tensorboard
+
+# Optional (for model export/inference)
+onnx
+onnxruntime-gpu
+
+

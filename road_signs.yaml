@@ -1,0 +1,11 @@
+path: Dataset  # this is the root folder
+
+train: train
+val: val
+test: test
+
+names:
+  0: crosswalk
+  1: speedlimit
+  2: stop
+  3: trafficlight
